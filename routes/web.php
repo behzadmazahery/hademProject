@@ -1,0 +1,46 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+
+Route::get('/', function(){
+	return view('home');
+})->name('home');
+
+
+Route::get('/loginpage', function(){
+	return view('loginpage');
+})->name('loginpage');
+
+
+Route::get('/verificationpage', function(){
+	return view('verificationpage');
+})->name('verificationpage');
+
+
+Route::get('/mainpage', function(){
+	return view('mainpage');
+})->name('mainpage');
+
+
+Route::get('/martyrspage', function(){
+	return view('martyrspage');
+})->name('martyrspage');
+
+
+Route::get('/detailMartry', function(){
+	return view('detailMartry');
+})->name('detailMartry');
+
+Route::get('/aiChat', function(){
+	return view('aiChat');
+})->name('aiChat');
+
+Route::get('/videoPage', function(){
+	return view('videoPage');
+})->name('videoPage');
+
+Route::get('/yademanPage', function(){
+	return view('yademanPage');
+})->name('yademanPage');
+

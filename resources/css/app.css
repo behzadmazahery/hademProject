@@ -1,0 +1,379 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+    --color__bg: #2E2E2E;
+    --color-surface: 249 250 251;
+    --main__color: #E5B569;
+
+    .menus-home .item {
+        border-radius: 50px;
+        padding: 22px;
+        border: 1px solid #D9D9D9;
+        justify-items: center;
+    }
+}
+
+.main__box {
+    max-width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--color__bg);
+}
+
+.text {
+    color: #fff;
+    background-color: var(--color__bg);
+}
+
+.title__style {
+    color: var(--main__color);
+}
+
+.main__btn {
+    width: 150px;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, #fff6b4, var(--main__color));
+    box-shadow: 0 0 15px var(--main__color);
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.login__input {
+    background-color: inherit;
+    border-radius: 15px;
+    border: 2px solid var(--main__color);
+    width: 275px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+.verification__input {
+    background-color: inherit;
+    border-radius: 15px;
+    border: 2px solid var(--main__color);
+    width: 50px;
+    height: 50px;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 22px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.login__input::placeholder {
+    letter-spacing: 1rem;
+}
+
+.login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color__bg);
+    height: 100vh;
+}
+
+
+.category article {
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 10px;
+
+    p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+}
+
+
+.time__title {
+    color: #D3A051;
+}
+
+.time__box,
+.mortry__box {
+    background-color: #212121;
+    border-radius: 20px;
+}
+
+.mounth {
+    color: var(--main__color);
+}
+
+.title {
+    color: var(--main__color);
+    font-size: 13px;
+}
+
+.time__line,
+.mortry__line,
+.media__line {
+    border-color: gray;
+}
+
+.mortry__card {
+    border: 2px solid var(--main__color);
+}
+
+.mortry__line {
+    width: 50px;
+    margin: 3px 0;
+}
+
+.mortry__content,
+.mortry__job {
+    color: var(--main__color);
+}
+
+.mortry__name {
+    font-size: 10px;
+}
+
+.mortry__location,
+.mortry__date {
+    font-size: 6px;
+}
+
+.mortry__img {
+    width: 100%;
+}
+
+.media__box {
+    background-color: #212121;
+}
+
+.media__card span {
+    color: var(--main__color);
+}
+
+.global__box {
+    background-color: #212121;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.global__title {
+    color: var(--main__color);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* اینپوت  فیلتر شهدا */
+
+.global__input__box {
+    border: 1px solid var(--main__color);
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 1rem;
+}
+
+
+.global__input__box p {
+    width: auto;
+    padding: 5px;
+    border-left: 3px solid #777777;
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: var(--main__color);
+}
+
+.global__input__box input {
+    padding: 5px;
+    background-color: inherit;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    min-width: 0;
+}
+
+.global__input__box label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.global__input__box input[type="radio"] {
+    accent-color: var(--main__color);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.martry__item {
+    border: 2px solid var(--main__color);
+    border-radius: 20px;
+    text-align: right;
+    padding: 2rem 1rem;
+
+    h2 {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    span,
+    p {
+        color: var(--main__color);
+        font-size: 12px;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    span {
+        border: 1px solid var(--main__color);
+        border-radius: 20px;
+        padding: 5px;
+
+    }
+
+    hr {
+        width: 100px;
+        border-color: gray;
+        margin: 5px 0;
+    }
+
+}
+
+.martry__detail__box {}
+
+.martry__name {
+    color: var(--main__color);
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolte;
+    bottom: 35px;
+}
+
+.martry__info li {
+    margin-bottom: 15px;
+}
+
+
+.martry__info li span:first-child {
+    background-color: var(--main__color);
+    color: #000;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+.martry__title {
+    margin-left: 10px;
+}
+
+.martry__info span {
+    color: #fff;
+}
+
+
+.martry__lifeStyle {
+    background-color: #212121;
+    margin: 30px;
+    border-radius: 35px;
+
+    h1 {
+        color: var(--main__color);
+
+    }
+}
+
+.memory__item {
+    background-color: #444444;
+    border-radius: 40px;
+
+}
+
+
+
+.ai_main__box {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../public//assets/images/img__bg_ai.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.ai__setting {
+    display: flex;
+    justify-content: center;
+}
+
+.ai__title {
+    color: var(--main__color);
+
+}
+
+.ai__text__box {
+    font-weight: bold;
+}
+
+.ai__input {
+    background-color: inherit;
+    outline: none;
+    border: none;
+}
+
+
+.input__search__box {
+    border-radius: 20px;
+
+}
+
+.input__search__box label {
+    color: var(--main__color);
+    border-left: 2px solid gray;
+
+}
+
+
+.video__list__item {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.video__item span {
+    color: var(--main__color);
+    border-bottom: 2px solid #000;
+    padding: 5px 0;
+}
+
+.video__item img {
+    /* width: 450px; */
+}

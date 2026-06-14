@@ -1,0 +1,25 @@
+:root {
+
+    --color-bg: 255 255 255;
+    --color-surface: 249 250 251;
+    --color-border: 229 231 235;
+
+    --color-text: 17 24 39;
+    --color-text-muted: 107 114 128;
+
+    --color-primary: 59 130 246;
+}
+body {
+    background: red;
+}
+.dark {
+
+    --color-bg: #2E2E2E;
+    --color-surface: 31 41 55;
+    --color-border: 55 65 81;
+
+    --color-text: 243 244 246;
+    --color-text-muted: 156 163 175;
+
+    --color-primary: 96 165 250;
+}
