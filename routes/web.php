@@ -48,3 +48,8 @@ Route::get('/momMemories', function(){
 	return view('momMemories');
 })->name('momMemories');
 
+
+Route::get('/ghoran', function(){
+	return view('ghoran');
+})->name('ghoran');
+

@@ -75,6 +75,4 @@
     </section>
     <!-- end momMemories content box -->
 
-
-
 @endsection

@@ -59,7 +59,46 @@
     .momMemories__content {
         padding-bottom: 1rem;
     }
+
+    .ghoran__detail__btn {
+        border: 2px solid var(--main__color);
+        border-radius: 50%;
+        color: white;
+        width: 70px;
+        height: 70px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: var(--main__color);
+        }
+
+        &:span {
+            font-weight: bold;
+        }
+    }
+
+    .child_1 {
+        background-color: var(--main__color);
+    }
+
+
+    .ghoran__detail__items {}
+
+    .ghoran__list {}
+
+    .ghoran__item {
+        border: 2px solid var(--main__color);
+        border-radius: 25px;
+    }
+
+    .ghoran__btn {
+        font-size: 25px;
+    }
 }
+
+
 
 
 
