@@ -13,6 +13,7 @@ export default {
 
     theme: {
         extend: {
+
             fontFamily: {
                 sans: ['Vazirmatn', ...defaultTheme.fontFamily.sans],
             },
@@ -23,7 +24,17 @@ export default {
                 text: 'rgb(var(--color-text) / <alpha-value>)',
                 muted: 'rgb(var(--color-text-muted) / <alpha-value>)',
                 primary: 'rgb(var(--color-primary) / <alpha-value>)',
-            }
+            },
+
+            boxShadow: {
+                'custome-shadow': '0 0 5px white',
+            },
+
+            btn: {
+                'global__btn': {
+                  
+              }  
+            },
         },
     },
 

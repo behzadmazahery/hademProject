@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 :root {
     --color__bg: #2E2E2E;
     --color-surface: 249 250 251;
@@ -16,6 +15,53 @@
         justify-items: center;
     }
 }
+
+
+@layer components {
+    .gallary__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .gallary__box article {
+        border: 1px solid #fff;
+        border-radius: 20px;
+        height: 200px;
+        cursor: pointer;
+    }
+
+    .gallary__box div {
+        border: 1px solid #fff;
+        height: 100px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .momMemories__title {
+        width: 85%;
+        padding: 10px 30px;
+        border-radius: 20px;
+        background-image: linear-gradient(to top right, #fff6b4, var(--main__color));
+        box-shadow: 0 0 15px var(--main__color);
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 1rem auto;
+        text-align: right;
+
+        margin-top: 10rem;
+    }
+
+    .momMemories__content {
+        padding-bottom: 1rem;
+    }
+}
+
+
 
 .main__box {
     max-width: 500px;

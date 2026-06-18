@@ -44,3 +44,7 @@ Route::get('/yademanPage', function(){
 	return view('yademanPage');
 })->name('yademanPage');
 
+Route::get('/momMemories', function(){
+	return view('momMemories');
+})->name('momMemories');
+
