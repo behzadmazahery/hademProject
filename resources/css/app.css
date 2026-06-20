@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-    --color__bg: #2E2E2E;
+    --color__bg: #2e2e2e;
     --color-surface: 249 250 251;
-    --main__color: #E5B569;
+    --main__color: #e5b569;
 
     .menus-home .item {
         border-radius: 50px;
         padding: 22px;
-        border: 1px solid #D9D9D9;
+        border: 1px solid #d9d9d9;
         justify-items: center;
     }
 }
-
 
 @layer components {
     .gallary__box {
@@ -45,7 +43,11 @@
         width: 85%;
         padding: 10px 30px;
         border-radius: 20px;
-        background-image: linear-gradient(to top right, #fff6b4, var(--main__color));
+        background-image: linear-gradient(
+            to top right,
+            #fff6b4,
+            var(--main__color)
+        );
         box-shadow: 0 0 15px var(--main__color);
         color: #000;
         font-weight: bold;
@@ -83,10 +85,11 @@
         background-color: var(--main__color);
     }
 
+    .ghoran__detail__items {
+    }
 
-    .ghoran__detail__items {}
-
-    .ghoran__list {}
+    .ghoran__list {
+    }
 
     .ghoran__item {
         border: 2px solid var(--main__color);
@@ -97,10 +100,6 @@
         font-size: 25px;
     }
 }
-
-
-
-
 
 .main__box {
     max-width: 500px;
@@ -123,7 +122,11 @@
     width: 150px;
     padding: 5px;
     border-radius: 20px;
-    background-image: linear-gradient(to top right, #fff6b4, var(--main__color));
+    background-image: linear-gradient(
+        to top right,
+        #fff6b4,
+        var(--main__color)
+    );
     box-shadow: 0 0 15px var(--main__color);
     color: #000;
     font-weight: bold;
@@ -172,7 +175,6 @@
     height: 100vh;
 }
 
-
 .category article {
     border-radius: 30px;
     display: flex;
@@ -186,12 +188,21 @@
         font-size: 12px;
         margin-top: 5px;
     }
-
 }
 
+/* ai chat input  styles */
+.ai__chat__box {
+    transition: height 0.3s ease;
+    height: auto;
+    /* یا ارتفاع پیش‌فرض */
+}
+
+.ai__chat__box:focus-within {
+    height: 200px;
+}
 
 .time__title {
-    color: #D3A051;
+    color: #d3a051;
 }
 
 .time__box,
@@ -264,7 +275,6 @@
     font-size: 22px;
 }
 
-
 /* اینپوت  فیلتر شهدا */
 
 .global__input__box {
@@ -279,7 +289,6 @@
     min-width: 0;
     margin-bottom: 1rem;
 }
-
 
 .global__input__box p {
     width: auto;
@@ -340,7 +349,6 @@
         border: 1px solid var(--main__color);
         border-radius: 20px;
         padding: 5px;
-
     }
 
     hr {
@@ -348,10 +356,10 @@
         border-color: gray;
         margin: 5px 0;
     }
-
 }
 
-.martry__detail__box {}
+.martry__detail__box {
+}
 
 .martry__name {
     color: var(--main__color);
@@ -366,14 +374,12 @@
     margin-bottom: 15px;
 }
 
-
 .martry__info li span:first-child {
     background-color: var(--main__color);
     color: #000;
     border-radius: 10px;
     padding: 5px;
     font-weight: bold;
-
 }
 
 .martry__title {
@@ -384,7 +390,6 @@
     color: #fff;
 }
 
-
 .martry__lifeStyle {
     background-color: #212121;
     margin: 30px;
@@ -392,17 +397,64 @@
 
     h1 {
         color: var(--main__color);
-
     }
 }
 
 .memory__item {
     background-color: #444444;
     border-radius: 40px;
-
 }
 
+/* ai chat input  styles */
+.ai__chat__box {
+    transition: height 0.3s ease;
+    height: auto;
+    /* یا ارتفاع پیش‌فرض */
+}
 
+.ai__chat__box:focus-within {
+    height: 200px;
+}
+
+.ai__chat__box:focus-within .ai__input {
+    height: 300px;
+}
+
+.ai__text__waiting {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ai__menu__box {
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.212);
+    /* display: none; */
+}
+
+.ai__search__list {
+    border-top: 1px solid var(--main__color);
+    /* display: inline-block; */
+    width: fit-content;
+}
+
+/* .ai__audio__box {
+    background-color: #d39f5156;
+} */
+
+/* انیمیشن پالس برای دکمه پلی/ضبط */
+@keyframes voice-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+.pulse-active {
+    animation: voice-pulse 1.5s ease-out infinite;
+}
 
 .ai_main__box {
     width: 100%;
@@ -411,7 +463,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .ai__setting {
@@ -421,7 +472,6 @@
 
 .ai__title {
     color: var(--main__color);
-
 }
 
 .ai__text__box {
@@ -434,24 +484,19 @@
     border: none;
 }
 
-
 .input__search__box {
     border-radius: 20px;
-
 }
 
 .input__search__box label {
     color: var(--main__color);
     border-left: 2px solid gray;
-
 }
-
 
 .video__list__item {
     flex-direction: column;
     align-items: center;
 }
-
 
 .video__item span {
     color: var(--main__color);
@@ -461,4 +506,22 @@
 
 .video__item img {
     /* width: 450px; */
+}
+
+.ai__text__message {
+    background-color: var(--main__color);
+    color: #000;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    text-align: justify;
+    border-radius: 25px 0 25px 25px;
+}
+
+.ai__text__response {
+    font-size: 11px;
+    font-weight: normal;
+    text-align: left;
+    text-align: justify;
+    border-radius: 0px 25px 25px 25px;
 }

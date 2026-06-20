@@ -17,6 +17,8 @@
                     <img src=" {{asset('assets/images/main__logo-01.png')}} " alt="website logo 2">
                 </article>
             </section>
+
+      
     <!-- end header box -->
 
     <!-- ai section box -->
@@ -42,33 +44,31 @@
 
             
             <!-- input  -->
-            <article class="ai__inpox__message absolute bottom-10 flex items-center justify-between right-0 left-0 px-10 ">
+            <article class="ai__inpox__message absolute bottom-10 flex items-center justify-between gap-2 right-0 left-0 px-10 ">
 
-                <div>
-                    <button class="ai__send__message__btn bg-[#000] p-3 rounded-2xl">
+                <div class=" bottom-5 self-end ">
+                    <button class="ai__send__message__btn   bg-[#000] p-4 rounded-2xl">
                     <img src="{{asset('assets/images/img__sendMessage.png')}}" alt="send message btn">
                     </button>
                 </div>
 
-                <div class="bg-[#000] p-3 rounded-2xl">
-                    <form class="flex justify-between ">
-
-                        <button>
-                            <img src="{{asset('assets/images/img__microphone-2.png')}}" alt="">
-                        </button>
-
-                        <span class="border border-x-zinc-500 mr-2"></span>
-
-                        <input class="w-72 mx-2 bg-inherit border-none outline-none  text-white" class="ai__input"  type="text" />
-
-                        <button>
-                            <img src="{{asset('assets/images/img__attach.png')}}" alt="">
-                        </button>
-
-                    </form>
-                </div>
-
-            </article>
+        <div class="bg-[#000] p-3 rounded-2xl ai__chat__box">
+            <form class="flex justify-between items-end h-full">  <!-- اضافه کردن items-end و h-full -->
+                
+                <button>
+                    <img src="{{asset('assets/images/img__microphone-2.png')}}" alt="">
+                </button>
+                   
+                <span class="border border-x-zinc-500 mr-2"></span>
+                
+                <input class="w-72 mx-2 bg-inherit border-none outline-none text-white aiInput ai__input" type="text" />
+                
+                <button>
+                    <img src="{{asset('assets/images/img__attach.png')}}" alt="">
+                </button>
+                
+            </form>
+        </div>
 
 
 

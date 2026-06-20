@@ -36,6 +36,10 @@ Route::get('/aiChat', function(){
 	return view('aiChat');
 })->name('aiChat');
 
+Route::get('/aiChatMessage', function(){
+	return view('aiChatMessage');
+})->name('aiChatMessage');
+
 Route::get('/videoPage', function(){
 	return view('videoPage');
 })->name('videoPage');
