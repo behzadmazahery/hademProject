@@ -57,3 +57,7 @@ Route::get('/ghoran', function(){
 	return view('ghoran');
 })->name('ghoran');
 
+Route::get('/message', function(){
+	return view('message');
+})->name('message');
+
