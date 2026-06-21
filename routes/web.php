@@ -61,3 +61,7 @@ Route::get('/message', function(){
 	return view('message');
 })->name('message');
 
+Route::get('/soorePage', function(){
+	return view('soorePage');
+})->name('soorePage');
+

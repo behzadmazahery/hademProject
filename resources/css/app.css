@@ -583,3 +583,179 @@
 .message__item:nth-child(even) {
     background-color: #000;
 }
+
+/* soore page styles */
+
+.soore__list h2 {
+    color: var(--main__color);
+    font-size: 20px;
+}
+
+.soore__content {
+    /* background-color: red; */
+}
+
+.soore__content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to top, #2e2e2e, #2e2e2e);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* ماسک گرادیانی برای محو شدن بلور از پایین به بالا */
+    mask-image: linear-gradient(to top, black 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+/* دکمه Play */
+audio::-webkit-media-controls-play-button {
+    background-color: #fff6b4 !important;
+    border-radius: 50% !important;
+    padding: 6px !important;
+    transition: all 0.3s ease;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: #ffe066 !important;
+    transform: scale(1.1);
+}
+
+.soore__audio audio {
+    background-color: inherit;
+    width: 100%;
+    accent-color: #ffd700; /* طلایی */
+}
+
+/*  _____________________________ */
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 30px;
+    /* width: 100%; */
+    max-width: 500px;
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    color: #ffd700;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+}
+
+.surah-item {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+    border-right: 3px solid #ffd700;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.surah-item:hover {
+    background: rgba(255, 215, 0, 0.05);
+    transform: translateX(-5px);
+    border-right-color: #ffed4a;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.05);
+}
+
+.surah-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.surah-name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.surah-number {
+    color: rgba(255, 215, 0, 0.7);
+    font-size: 13px;
+}
+
+.surah-time {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-family: "Courier New", monospace;
+    background: rgba(255, 215, 0, 0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 20px 0;
+}
+
+.time-section {
+    margin-top: 15px;
+    padding: 15px 20px;
+    background: rgba(255, 215, 0, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 215, 0, 0.08);
+}
+
+.time-section .label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.time-section .time-value {
+    color: #ffd700;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    direction: ltr;
+    text-align: left;
+}
+
+/* اصلاحات برای متن فارسی */
+@font-face {
+    font-family: "Vazir";
+    src: local("Vazir");
+}
+.soore__audio::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+}
+
+.soore__audio::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.soore__audio::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.soore__audio:hover::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ffd700, #f0a500);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.soore__audio:hover::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ffed4a, #ffd700);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
