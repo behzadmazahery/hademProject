@@ -909,3 +909,84 @@ audio::-webkit-media-controls-play-button:hover {
     font-size: 12px;
     color: #b9b9b9;
 }
+
+/*  profile page styles  */
+
+.profile__name {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--main__color);
+}
+.profile__number {
+    color: #fff;
+}
+
+.profile__data__text {
+    color: var(--main__color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile__item {
+    background-color: #212121;
+    padding: 10px 20px;
+}
+
+.profile__item span {
+    color: var(--main__color);
+}
+
+.profile__item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 16px 24px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    /* سایه مینیمال و جذاب */
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15),
+        0 1px 3px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.profile__item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(229, 181, 105, 0.3);
+
+    /* سایه هنگام hover */
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.2),
+        0 4px 12px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 0 20px rgba(229, 181, 105, 0.05);
+}
+
+.profile__item:active {
+    transform: scale(0.98);
+    transition-duration: 0.1s;
+}
+
+/* افکت درخشش روی آیکون قلب */
+.profile__item svg:first-child {
+    filter: drop-shadow(0 0 8px rgba(229, 181, 105, 0.3));
+    transition: all 0.3s ease;
+}
+
+.profile__item:hover svg:first-child {
+    filter: drop-shadow(0 0 15px rgba(229, 181, 105, 0.5));
+    transform: scale(1.05);
+}
+
+/* افکت حرکت فلش */
+.profile__item svg:last-child {
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.profile__item:hover svg:last-child {
+    transform: translateX(-4px);
+    opacity: 1;
+}

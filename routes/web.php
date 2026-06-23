@@ -69,3 +69,7 @@ Route::get('/salavatePage', function(){
 	return view('salavatePage');
 })->name('salavatePage');
 
+Route::get('/profilePage', function(){
+	return view('profilePage');
+})->name('profilePage');
+
