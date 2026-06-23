@@ -106,6 +106,7 @@
     height: 100%;
     margin: 0 auto;
     text-align: center;
+    padding: 1rem 0;
     background-color: var(--color__bg);
 }
 
@@ -264,7 +265,7 @@
 .global__box {
     background-color: #212121;
     border-radius: 20px;
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
     color: white;
 }
@@ -621,14 +622,14 @@ audio::-webkit-media-controls-play-button {
 }
 
 audio::-webkit-media-controls-play-button:hover {
-    background-color: #ffe066 !important;
+    background-color: #fff6b4 !important;
     transform: scale(1.1);
 }
 
 .soore__audio audio {
     background-color: inherit;
     width: 100%;
-    accent-color: #ffd700; /* طلایی */
+    accent-color: #fff6b4; /* طلایی */
 }
 
 /*  _____________________________ */
@@ -644,7 +645,7 @@ audio::-webkit-media-controls-play-button:hover {
 }
 
 .title {
-    color: #ffd700;
+    color: #fff6b4;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -658,17 +659,18 @@ audio::-webkit-media-controls-play-button:hover {
     border-radius: 16px;
     padding: 18px 20px;
     margin-bottom: 12px;
-    border-right: 3px solid #ffd700;
+    border-right: 3px solid #fff6b4;
     transition: all 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .surah-item:hover {
     background: rgba(255, 215, 0, 0.05);
     transform: translateX(-5px);
-    border-right-color: #ffed4a;
+    border-right-color: #fff6b4;
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.05);
 }
 
@@ -685,7 +687,7 @@ audio::-webkit-media-controls-play-button:hover {
 }
 
 .surah-number {
-    color: rgba(255, 215, 0, 0.7);
+    color: #fff6b4;
     font-size: 13px;
 }
 
@@ -722,7 +724,7 @@ audio::-webkit-media-controls-play-button:hover {
 }
 
 .time-section .time-value {
-    color: #ffd700;
+    color: #fff6b4;
     font-size: 20px;
     font-weight: bold;
     font-family: "Courier New", monospace;
@@ -730,11 +732,6 @@ audio::-webkit-media-controls-play-button:hover {
     text-align: left;
 }
 
-/* اصلاحات برای متن فارسی */
-@font-face {
-    font-family: "Vazir";
-    src: local("Vazir");
-}
 .soore__audio::-webkit-scrollbar {
     width: 4px;
     background: transparent;
@@ -751,11 +748,164 @@ audio::-webkit-media-controls-play-button:hover {
 }
 
 .soore__audio:hover::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #ffd700, #f0a500);
+    background: linear-gradient(to bottom, #ffd700, #fff6b4);
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .soore__audio:hover::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #ffed4a, #ffd700);
+    background: linear-gradient(to bottom, #ffed4a, #fff6b4);
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.salavate__reset__counter {
+    margin-top: 1rem;
+    display: block;
+}
+
+.salavat__zekr {
+    color: var(--main__color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.salavat__count {
+    width: 228px;
+    height: 228px;
+    background: #2e2e2e;
+    border: 4px solid #e5b569;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    font-weight: bold;
+    color: #e5b569;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.salavat__count:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(229, 181, 105, 0.2);
+}
+
+/* ===== حلقه‌های تپنده ===== */
+.ripple-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 2px solid #e5b569;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* حلقه اول */
+.ripple-ring:nth-child(1) {
+    width: 80%;
+    height: 80%;
+    animation: ringPulse 1.2s ease-out infinite;
+    animation-delay: 0s;
+}
+
+/* حلقه دوم */
+.ripple-ring:nth-child(2) {
+    width: 80%;
+    height: 80%;
+    animation: ringPulse 1.2s ease-out infinite;
+    animation-delay: 0.3s;
+}
+
+/* حلقه سوم */
+.ripple-ring:nth-child(3) {
+    width: 80%;
+    height: 80%;
+    animation: ringPulse 1.2s ease-out infinite;
+    animation-delay: 0.6s;
+}
+
+/* حلقه چهارم */
+.ripple-ring:nth-child(4) {
+    width: 80%;
+    height: 80%;
+    animation: ringPulse 1.2s ease-out infinite;
+    animation-delay: 0.9s;
+}
+
+@keyframes ringPulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 1;
+        border-width: 3px;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2.2);
+        opacity: 0;
+        border-width: 1px;
+    }
+}
+
+/* ===== وقتی روی دایره کلیک می‌شود، تپش سریع‌تر می‌شود ===== */
+.salavat__count:active ~ .ripple-ring {
+    animation-duration: 0.6s !important;
+}
+
+/* ===== اگر می‌خواهید فقط روی هاور فعال شود ===== */
+.salavat__count:hover ~ .ripple-ring {
+    animation-duration: 0.8s;
+}
+
+/* ===== کانتینر اصلی ===== */
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.counter-container h1 {
+    color: #e5b569;
+    font-size: 24px;
+    margin: 0;
+}
+
+.counter-container p {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.salavat__title {
+    color: var(--main__color);
+    font-weight: bold;
+}
+
+.salavat__title {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.315);
+}
+
+.zekr__item {
+    border-right: 4px solid var(--main__color);
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.zekr {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.zekr__translate {
+    font-size: 12px;
+    color: #b9b9b9;
 }
