@@ -73,3 +73,8 @@ Route::get('/profilePage', function(){
 	return view('profilePage');
 })->name('profilePage');
 
+
+Route::get('/profileDetailPage', function(){
+	return view('profileDetailPage');
+})->name('profileDetailPage');
+
