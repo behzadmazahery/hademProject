@@ -70,7 +70,7 @@
 
                 <div>
                 <form class="flex items-center gap-5 text-white mr- ">
-                    <div class="flex items-center  gap-2  ">
+                    <div class="flex items-center gap-2">
                         <input class="show__aye" type="radio" name="displayMode" value="both" id="option1">
                         <label class="form__label" for="option1"> نمایش آیه و ترجمه </label>
                     </div>
@@ -88,6 +88,43 @@
 
             
             <!-- end inputs component  -->
+
+
+
+
+
+            <!-- filter box  -->
+
+
+            <section style="border-radius:20px;" class=" text-right  px-6 py-4  w-[85%] mx-auto bg-[#212121] h-[300px] ">
+              <div class="flex items-center gap-3">
+                  <span>
+                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.99262 6.05328C5.28551 6.34617 5.76039 6.34617 6.05328 6.05328L10.8263 1.28031C11.1191 0.987415 11.1191 0.512542 10.8263 0.219648C10.5334 -0.073245 10.0585 -0.073245 9.76559 0.219648L5.52295 4.46229L1.28031 0.219648C0.987415 -0.073245 0.512542 -0.073245 0.219648 0.219648C-0.073245 0.512542 -0.073245 0.987415 0.219648 1.28031L4.99262 6.05328ZM5.52295 4.52295H4.77295V5.52295H5.52295H6.27295V4.52295H5.52295Z" fill="#D3A051"/>
+                    </svg>
+                </span>
+                <span  style="color : #d3a051 " class="font-bold text-md">فیلتر</span>
+              </div>
+            </section>
+
+            <!-- filter box  -->
+
+            <br><br>
+
+        <section class="text-right px-6 py-4 w-[85%] mx-auto bg-[#212121] h-[300px] rounded-[20px]">
+                <div class="flex items-center justify-between pb-3 border-b-2 border-[#6d6d6d75]">
+                    <div class="flex items-center gap-3">
+                        <span>
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.99262 6.05328C5.28551 6.34617 5.76039 6.34617 6.05328 6.05328L10.8263 1.28031C11.1191 0.987415 11.1191 0.512542 10.8263 0.219648C10.5334 -0.073245 10.0585 -0.073245 9.76559 0.219648L5.52295 4.46229L1.28031 0.219648C0.987415 -0.073245 0.512542 -0.073245 0.219648 0.219648C-0.073245 0.512542 -0.073245 0.987415 0.219648 1.28031L4.99262 6.05328ZM5.52295 4.52295H4.77295V5.52295H5.52295H6.27295V4.52295H5.52295Z" fill="#D3A051"/>
+                            </svg>
+                        </span>
+                        <span class="font-bold text-md text-[#d3a051]">عنوان مودال</span>
+                    </div>
+                    <button class="text-white font-bold">بستن</button>
+                </div>
+</section>
+
 
 
 </div>
