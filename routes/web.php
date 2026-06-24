@@ -78,3 +78,7 @@ Route::get('/profileDetailPage', function(){
 	return view('profileDetailPage');
 })->name('profileDetailPage');
 
+Route::get('/components', function(){
+	return view('components');
+})->name('components');
+

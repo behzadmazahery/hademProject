@@ -276,7 +276,6 @@
     display: flex;
     align-items: center;
     padding: 12px;
-    gap: 8px;
 
     label {
         color: var(--main__color);

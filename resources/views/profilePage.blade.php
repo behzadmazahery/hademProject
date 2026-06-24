@@ -20,7 +20,6 @@
             </section>
             <!-- end header box -->
 
-
             <!-- profile info box -->
             <section class="profile__info mt-14 relative ">
                 <div class="flex flex-col justify-center items-center ">
