@@ -120,3 +120,92 @@ function toggleMenu() {
         menu.style.display = "none";
     }
 }
+
+// تقویم فارسی
+
+// flatpickr("#birthdate", {
+//     plugins: [
+//         new jalaliPlugin({
+//             // تنظیمات پلاگین فارسی (اختیاری)
+//         }),
+//     ],
+//     locale: {
+//         firstDayOfWeek: 6, // شنبه اولین روز هفته در تقویم فارسی
+//         weekdays: {
+//             shorthand: ["ی", "د", "س", "چ", "پ", "ج", "ش"],
+//             longhand: [
+//                 "یکشنبه",
+//                 "دوشنبه",
+//                 "سه‌شنبه",
+//                 "چهارشنبه",
+//                 "پنجشنبه",
+//                 "جمعه",
+//                 "شنبه",
+//             ],
+//         },
+//         months: {
+//             shorthand: [
+//                 "فر",
+//                 "ار",
+//                 "خرد",
+//                 "تیر",
+//                 "مرد",
+//                 "شه",
+//                 "مهر",
+//                 "آب",
+//                 "آذر",
+//                 "دی",
+//                 "بهم",
+//                 "اسف",
+//             ],
+//             longhand: [
+//                 "فروردین",
+//                 "اردیبهشت",
+//                 "خرداد",
+//                 "تیر",
+//                 "مرداد",
+//                 "شهریور",
+//                 "مهر",
+//                 "آبان",
+//                 "آذر",
+//                 "دی",
+//                 "بهمن",
+//                 "اسفند",
+//             ],
+//         },
+//     },
+//     dateFormat: "Y/m/d", // فرمت نمایش: ۱۴۰۲/۰۵/۱۵
+//     altInput: true,
+//     altFormat: "Y/m/d", // فرمت جایگزین
+//     allowInput: true,
+//     disableMobile: true, // برای جلوگیری از تقویم موبایل مرورگر
+//     onChange: function (selectedDates, dateStr, instance) {
+//         // تاریخ انتخاب شده در dateStr به صورت شمسی است
+//         console.log("تاریخ انتخاب شده: ", dateStr);
+//     },
+// });
+
+//  SELECTED 2 برای DROPdOWN
+
+// $(document).ready(function () {
+//     $(".custom-select2").select2({
+//         placeholder: "انتخاب کنید",
+//         allowClear: false,
+//         width: "resolve", // تنظیم خودکار عرض
+//         dropdownAutoWidth: true, // تنظیم عرض منو با محتوا
+//         theme: "classic", // یا 'default'
+//     });
+
+//     // تغییر عرض به اندازه والد هنگام باز شدن
+//     $(".custom-select2").on("select2:open", function () {
+//         const parentWidth = $(this).closest(".global__input").width();
+//         $(this)
+//             .next(".select2-container")
+//             .css("width", parentWidth + "px");
+//     });
+
+//     // برگشت به عرض اولیه هنگام بسته شدن
+//     $(".custom-select2").on("select2:close", function () {
+//         $(this).next(".select2-container").css("width", "120px");
+//     });
+// });

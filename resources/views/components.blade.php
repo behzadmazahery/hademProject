@@ -37,13 +37,58 @@
             <!-- inputs component -->
 
             <!-- type = text  اینپوت معمولی -->
-             <!--  از کلاس سراسری global__input__box  استفاده شده   -->
+            <!--  از کلاس سراسری global__input__box  استفاده شده   -->
 
                 <div class="global__input__box">
                     <p class="p-2 px-4 text-[#e5b569]"> نام  </p>
                     <input class="text-white flex-1 p-2 bg-transparent " type="text" value="بهزاد مظاهری" />
                 </div>
 
+
+                <li class="message__item p-2 flex justify-between">
+
+                    <div>
+                        <h1 class="message__item__title mb-2"> درست نبودن اطلاعات شهید</h1>
+                        <p  class="text-white text-sm ">پشتیبانی: ممنون از شما مدارک ارسالی بررسی ...</p>
+                    </div>
+
+                    <div class="text-white message__time self-end text-left mb-1">
+                        <p class="mb-2 category__item ">8:30 بعدازظهر 1403/11/8</p>
+                        <p class="border inline px-2 category__time  border-s-white rounded-lg">دسته بندی: اذان</p>
+                    </div>
+
+
+                </li>
+
+
+              <section class="w-[85%] mx-auto">
+                  <div class=" flex items-center gap-3 mb-3"> 
+                    <h1 style="color :#d3a051; " class="text-white whitespace-nowrap font-bold text-[19px]"> نحوه نمایش </h1>
+                    <hr style="color : white; border: 1px solid; " class="w-full mt-1">
+
+                </div>
+
+                <div>
+                <form class="flex items-center gap-5 text-white mr- ">
+                    <div class="flex items-center  gap-2  ">
+                        <input class="show__aye" type="radio" name="displayMode" value="both" id="option1">
+                        <label class="form__label" for="option1"> نمایش آیه و ترجمه </label>
+                    </div>
+                    <div class="flex items-center gap-2 ">
+                        <input class="show__aye" type="radio" name="displayMode" value="onlyAyah" id="option2">
+                        <label class="form__label" for="option2"> نمایش آیه </label>
+                    </div>
+                </form>
+                </div>
+              </section>
+                        
+
+            
+            <br><br>
+
+            
             <!-- end inputs component  -->
+
+
 </div>
 @endsection

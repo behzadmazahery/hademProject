@@ -106,7 +106,7 @@
     height: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 1rem 0;
+
     background-color: var(--color__bg);
 }
 
@@ -120,8 +120,7 @@
 }
 
 .main__btn {
-    width: 150px;
-    padding: 5px;
+    padding: 5px 15px;
     border-radius: 20px;
     background-image: linear-gradient(
         to top right,
@@ -131,7 +130,7 @@
     box-shadow: 0 0 15px var(--main__color);
     color: #000;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 13px;
     margin: 1rem 0;
 }
 
@@ -275,7 +274,7 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
-    padding: 12px;
+    padding: 10px;
 
     label {
         color: var(--main__color);
@@ -328,6 +327,12 @@
 }
 
 /* اینپوت  فیلتر شهدا */
+
+.sex_option__box option {
+    background-color: var(--color__bg);
+    border: 2px solid var(--main__color);
+    width: 150px;
+}
 
 .global__input__box {
     border: 1px solid var(--main__color);
@@ -608,9 +613,10 @@
 }
 
 .message__btn {
-    border: 2px solid var(--main__color);
-    border-radius: 20px;
-    font-size: 18px;
+    border: 1px solid var(--main__color);
+    border-radius: 13px;
+    font-size: 14px;
+    padding: 4px 7px;
 }
 
 .message__list__box {
@@ -627,11 +633,24 @@
 
 .message__item__title {
     color: var(--main__color);
-    font-size: 22px;
+    font-size: 14px;
+}
+
+.message__time {
+    font-size: 5px;
+}
+
+.category__item {
+    font-size: 6px;
+}
+
+.message__item p {
+    font-size: 7px !important ;
 }
 
 .message__item:nth-child(odd) {
-    background-image: linear-gradient(to right, #fff6b4, #000);
+    /* مشکی فقط ۳۰٪ آخر المان را می‌گیرد */
+    background-image: linear-gradient(to right, #e5b569 0%, #000 70%);
 }
 .message__item:nth-child(even) {
     background-color: #000;
@@ -964,6 +983,21 @@ audio::-webkit-media-controls-play-button:hover {
 
 /*  profile page styles  */
 
+.alert__message {
+    font-size: 11px !important;
+}
+
+.profile__edit__form * {
+    font-size: 10px;
+}
+.flatpickr-calendar {
+    z-index: 9999 !important;
+}
+
+.profile__edit__form label {
+    padding-left: 5px;
+}
+
 .profile__name {
     font-size: 35px;
     font-weight: bold;
@@ -971,6 +1005,7 @@ audio::-webkit-media-controls-play-button:hover {
 }
 .profile__number {
     color: #fff;
+    font-size: 14px;
 }
 
 .profile__data__text {
@@ -1054,9 +1089,54 @@ audio::-webkit-media-controls-play-button:hover {
     margin-bottom: 2rem;
 }
 
-.profile__number {
-    font-size: 20px;
+/* برای مرورگرهای جدید */
+::placeholder {
+    color: white !important;
+    opacity: 1; /* برای اطمینان از کمرنگ نبودن در فایرفاکس */
 }
 
-.input__component {
+/* برای مرورگرهای قدیمی (WebKit) */
+::-webkit-input-placeholder {
+    color: white;
+}
+
+/* برای فایرفاکس قدیمی */
+::-moz-placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.form__label {
+    font-size: 14px;
+}
+
+.show__aye {
+    appearance: none;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #d3a051;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    margin-right: 8px;
+}
+
+.show__aye:checked {
+    border-color: #d3a051;
+    background-color: #d3a051;
+    /* box-shadow: 0 0 0 3px #d3a051; */
+}
+
+.show__aye:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d3a051;
 }

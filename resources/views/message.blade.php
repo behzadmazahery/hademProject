@@ -34,63 +34,67 @@
 
                     <ul class="message__list">
 
-                        <li class="message__item p-3 flex justify-between ">
+                        <li class="message__item p-2 flex justify-between ">
 
                             <div>
                                 <h1 class="message__item__title mb-2"> درست نبودن اطلاعات شهید</h1>
                                 <p  class="text-white text-sm ">پشتیبانی: ممنون از شما مدارک ارسالی بررسی ...</p>
                             </div>
 
-                            <div class="text-white message__time self-end text-left">
-                                <p class="mb-2" >8:30 بعدازظهر 1403/11/8</p>
-                                <p class="border inline px-2  border-s-white rounded-lg">دسته بندی: اذان</p>
+                            <div class="text-white message__time self-end text-left mb-1">
+                                <p class="mb-2 category__item ">8:30 بعدازظهر 1403/11/8</p>
+                                <p class="border inline px-2 category__time  border-s-white rounded-lg">دسته بندی: اذان</p>
                             </div>
 
 
                         </li>
-                         <li class="message__item p-3 flex justify-between ">
+                               <li class="message__item p-2 flex justify-between ">
 
                             <div>
                                 <h1 class="message__item__title mb-2"> درست نبودن اطلاعات شهید</h1>
                                 <p  class="text-white text-sm ">پشتیبانی: ممنون از شما مدارک ارسالی بررسی ...</p>
                             </div>
 
-                            <div class="text-white message__time self-end text-left">
-                                <p class="mb-2" >8:30 بعدازظهر 1403/11/8</p>
-                                <p class="border inline px-2  border-s-white rounded-lg">دسته بندی: اذان</p>
-                            </div>
-
-
-                        </li>
-                         <li class="message__item p-3 flex justify-between ">
-
-                            <div>
-                                <h1 class="message__item__title mb-2"> درست نبودن اطلاعات شهید</h1>
-                                <p  class="text-white text-sm ">پشتیبانی: ممنون از شما مدارک ارسالی بررسی ...</p>
-                            </div>
-
-                            <div class="text-white message__time self-end text-left">
-                                <p class="mb-2" >8:30 بعدازظهر 1403/11/8</p>
-                                <p class="border inline px-2  border-s-white rounded-lg">دسته بندی: اذان</p>
-                            </div>
-
-
-                        </li>
-                         <li class="message__item p-3 flex justify-between ">
-
-                            <div>
-                                <h1 class="message__item__title mb-2"> درست نبودن اطلاعات شهید</h1>
-                                <p  class="text-white text-sm ">پشتیبانی: ممنون از شما مدارک ارسالی بررسی ...</p>
-                            </div>
-
-                            <div class="text-white message__time self-end text-left">
-                                <p class="mb-2" >8:30 بعدازظهر 1403/11/8</p>
-                                <p class="border inline px-2  border-s-white rounded-lg">دسته بندی: اذان</p>
+                            <div class="text-white message__time self-end text-left mb-1">
+                                <p class="mb-2 category__item ">8:30 بعدازظهر 1403/11/8</p>
+                                <p class="border inline px-2 category__time  border-s-white rounded-lg">دسته بندی: اذان</p>
                             </div>
 
 
                         </li>
                         
+                               <li class="message__item p-2 flex justify-between ">
+
+                            <div>
+                                <h1 class="message__item__title mb-2"> درست نبودن اطلاعات شهید</h1>
+                                <p  class="text-white text-sm ">پشتیبانی: ممنون از شما مدارک ارسالی بررسی ...</p>
+                            </div>
+
+                            <div class="text-white message__time self-end text-left mb-1">
+                                <p class="mb-2 category__item ">8:30 بعدازظهر 1403/11/8</p>
+                                <p class="border inline px-2 category__time  border-s-white rounded-lg">دسته بندی: اذان</p>
+                            </div>
+
+
+                        </li>
+                        
+                               <li class="message__item p-2 flex justify-between ">
+
+                            <div>
+                                <h1 class="message__item__title mb-2"> درست نبودن اطلاعات شهید</h1>
+                                <p  class="text-white text-sm ">پشتیبانی: ممنون از شما مدارک ارسالی بررسی ...</p>
+                            </div>
+
+                            <div class="text-white message__time self-end text-left mb-1">
+                                <p class="mb-2 category__item ">8:30 بعدازظهر 1403/11/8</p>
+                                <p class="border inline px-2 category__time  border-s-white rounded-lg">دسته بندی: اذان</p>
+                            </div>
+
+
+                        </li>
+                        
+                        
+
                     </ul>
                 </div>
             </section>
