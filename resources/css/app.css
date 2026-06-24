@@ -340,12 +340,13 @@
     flex: 1;
     min-width: 0;
     margin-bottom: 1rem;
+    color: #fff !important ;
 }
 
 .global__input__box p {
     width: auto;
     padding: 5px;
-    border-left: 3px solid #777777;
+    border-left: 2px solid var(--main__color);
     white-space: nowrap;
     flex-shrink: 0;
     color: var(--main__color);
@@ -1055,4 +1056,7 @@ audio::-webkit-media-controls-play-button:hover {
 
 .profile__number {
     font-size: 20px;
+}
+
+.input__component {
 }

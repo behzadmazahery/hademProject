@@ -4,7 +4,7 @@
 @section('content')
 <div class="main__box">
               <!-- profile info box -->
-            <section class=" mt-14 relative ">
+            <section class="mt-14 relative ">
                 <div class="flex flex-col justify-center items-center ">
                     <img class=" w-[150px] h-[150px] " src="{{asset('assets/images/profile__photo.png')}}" alt="profile image">
                     <h1 class="profile__name"> محمدامیر سرایی </h1>
@@ -31,5 +31,19 @@
                 </div>
             </section>
             <!-- end profile info box -->
+
+            <br><br>
+
+            <!-- inputs component -->
+
+            <!-- type = text  اینپوت معمولی -->
+             <!--  از کلاس سراسری global__input__box  استفاده شده   -->
+
+                <div class="global__input__box">
+                    <p class="p-2 px-4 text-[#e5b569]"> نام  </p>
+                    <input class="text-white flex-1 p-2 bg-transparent " type="text" value="بهزاد مظاهری" />
+                </div>
+
+            <!-- end inputs component  -->
 </div>
 @endsection
