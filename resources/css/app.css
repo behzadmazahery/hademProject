@@ -103,10 +103,9 @@
 
 .main__box {
     max-width: 500px;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
     text-align: center;
-
     background-color: var(--color__bg);
 }
 
@@ -663,10 +662,6 @@
     font-size: 20px;
 }
 
-.soore__content {
-    /* background-color: red; */
-}
-
 .soore__content::after {
     content: "";
     position: absolute;
@@ -1141,7 +1136,89 @@ audio::-webkit-media-controls-play-button:hover {
     background: #d3a051;
 }
 
-
 .custom-border {
     border-color: #6d6d6d75;
-} 
+}
+
+.memories__info {
+    position: absolute;
+    right: -1px;
+    bottom: -10px;
+    border-top-left-radius: 25px;
+    background: #2e2e2e;
+    z-index: 20;
+    text-align: right !important;
+
+    /* ⭐ اضافه کردن فاصله داخلی برای زیبایی متن */
+    padding: 8px 18px;
+}
+
+/* گوشه پایین-چپ (برش منحنی) */
+.memories__info::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-right-radius: 9999px;
+    box-shadow: 20px 20px 0 20px #2e2e2e;
+    z-index: 5;
+}
+.memories__info p,
+h3 {
+    position: relative;
+    z-index: 10; /* عددی بزرگتر از z-index::before (که 5 است) */
+}
+/* گوشه بالا-راست (برش منحنی) */
+.memories__info::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-right-radius: 9999px;
+    box-shadow: 20px 20px 0 20px #2e2e2e;
+    z-index: 5;
+}
+
+input[type="range"]::-moz-range-thumb {
+    transform: translateY(-16px) !important;
+}
+
+.quran__box {
+    background-image: url(../../public//assets//images/background__message__page.png);
+}
+
+.checkbox__radio {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 19px;
+    height: 19px;
+    border: 2px solid var(--main__color);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    background: transparent;
+}
+
+/* استایل حالت انتخاب شده */
+.checkbox__radio:checked {
+    border-color: var(--main__color);
+    background-color: var(--main__color);
+}
+.checkbox__radio:checked::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: var(--main__color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
