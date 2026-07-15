@@ -82,3 +82,11 @@ Route::get('/components', function(){
 	return view('components');
 })->name('components');
 
+Route::get('/fanClubPage', function(){
+	return view('fanClubPage');
+})->name('fanClubPage');
+
+Route::get('/mosabeghatPage', function(){
+	return view('mosabeghatPage');
+})->name('mosabeghatPage');
+

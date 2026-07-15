@@ -1222,3 +1222,16 @@ input[type="range"]::-moz-range-thumb {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.mosabeghat__hover__box {
+}
+
+.mosabeghat__hover__line::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: white; /* or gray */
+    margin: 0 8px; /* optional spacing */
+    flex-shrink: 0;
+}
