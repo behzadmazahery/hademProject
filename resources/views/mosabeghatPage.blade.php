@@ -61,6 +61,7 @@
        <section class="mosabeghat__item bg-[#212121] p-2 rounded-3xl  mb-5"> 
          <div class="relative">
             <img class=" w-full h-[160px] " src=" {{asset('assets/images/img__mosabeghat__baner.png')}} " alt="mosabeghat image">
+            
             <!-- وقتی مسابقه تمام میشود display : block  میشود . -->
             <!-- <div class="mosabeghat__hover__box absolute bg-[#d39f51dc] w-full h-full top-0 right-0 rounded-2xl grid items-center   backdrop-blur-sm">
                <span class="mosabeghat__hover__line"></span>

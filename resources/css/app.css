@@ -129,7 +129,7 @@
     box-shadow: 0 0 15px var(--main__color);
     color: #000;
     font-weight: bold;
-    font-size: 13px;
+    /* font-size: 13px; */
     margin: 1rem 0;
 }
 
@@ -1234,4 +1234,36 @@ input[type="range"]::-moz-range-thumb {
     background-color: white; /* or gray */
     margin: 0 8px; /* optional spacing */
     flex-shrink: 0;
+}
+
+.mosabeghat__ketabkhani__title {
+    display: flex;
+    align-items: center;
+}
+
+.mosabeghat__ketabkhani__title::before {
+    content: "";
+    display: inline-block; /* یا block */
+    width: 8px;
+    height: 60px;
+    background-color: var(--main__color); /* به جای color */
+    /* اگر میخواهید در وسط کنار متن قرار گیرد: */
+    vertical-align: middle;
+    margin-left: 8px; /* فاصله با متن */
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.question__timer {
+    border: 1px solid #e5b569;
+}
+
+.select__item {
+    background-image: linear-gradient(
+        to top right,
+        #fff6b4,
+        var(--main__color)
+    );
+    box-shadow: 0 0 15px var(--main__color);
+    color: #000;
 }
