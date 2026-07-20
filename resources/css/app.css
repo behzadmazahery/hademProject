@@ -1154,7 +1154,8 @@ audio::-webkit-media-controls-play-button:hover {
 }
 
 /* گوشه پایین-چپ (برش منحنی) */
-.memories__info::before {
+.memories__info::before,
+.question__card__item::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -1166,24 +1167,13 @@ audio::-webkit-media-controls-play-button:hover {
     box-shadow: 20px 20px 0 20px #2e2e2e;
     z-index: 5;
 }
+
 .memories__info p,
 h3 {
     position: relative;
     z-index: 10; /* عددی بزرگتر از z-index::before (که 5 است) */
 }
 /* گوشه بالا-راست (برش منحنی) */
-.memories__info::after {
-    content: "";
-    position: absolute;
-    top: -30px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border-bottom-right-radius: 9999px;
-    box-shadow: 20px 20px 0 20px #2e2e2e;
-    z-index: 5;
-}
 
 input[type="range"]::-moz-range-thumb {
     transform: translateY(-16px) !important;
@@ -1258,6 +1248,10 @@ input[type="range"]::-moz-range-thumb {
     border: 1px solid #e5b569;
 }
 
+.question__counter {
+    border: 1px solid #fff;
+}
+
 .select__item {
     background-image: linear-gradient(
         to top right,
@@ -1266,4 +1260,94 @@ input[type="range"]::-moz-range-thumb {
     );
     box-shadow: 0 0 15px var(--main__color);
     color: #000;
+}
+
+.clip-path-custom {
+    clip-path: polygon(
+        100% 0%,
+        /* بالا راست */ 100% 100%,
+        /* پایین راست */ 0% 100%,
+        /* پایین چپ */ 30% 0% /* برش مورب بالا چپ */
+    );
+    border-radius: 0 0 0 20px; /* انحنای اضافی */
+    box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.question__card:active {
+    box-shadow: 5px 5px 15px var(--main__color);
+}
+
+/* به جای li، رو خود a کلیک کن (چون a کلیک‌پذیرتره) */
+.question__card a:active .question__card__item {
+    background-color: #d3a051 !important;
+}
+
+.question__card__item {
+    border-top-left-radius: 20px;
+    background-color: #2e2e2e;
+}
+
+.question__card:active .question__card__item {
+    background-color: #d3a051 !important ;
+    overflow: hidden;
+}
+.question__card a:active .question__card__item {
+    background-color: #d3a051 !important;
+}
+
+.question__card__item::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-right-radius: 9999px;
+    box-shadow: 20px 20px 0 20px #2e2e2e;
+    z-index: 150;
+}
+
+.question__card__item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-bottom-right-radius: 9999px;
+    box-shadow: 20px 20px 0 20px #2e2e2e;
+    z-index: 5;
+}
+
+/* حالا برادران شبه‌المنت رو هم رنگ کن */
+.question__card a:active .question__card__item::before,
+.question__card a:active .question__card__item::after {
+    background-color: #d3a051 !important;
+}
+
+/* ۱. خود اسپن را طلایی کن */
+.question__card a:active .question__card__item {
+    background-color: #d3a051 !important;
+    color: #000;
+}
+
+/* ۲. شبه‌المنت قبل (گوشه‌ی پایین-چپ) - هم رنگ و هم سایه */
+.question__card a:active .question__card__item::before {
+    background-color: #d3a051 !important;
+    box-shadow: 20px 20px 0 20px #d3a051 !important;
+}
+
+/* ۳. شبه‌المنت بعد (گوشه‌ی بالا-راست) - هم رنگ و هم سایه */
+.question__card a:active .question__card__item::after {
+    background-color: #d3a051 !important;
+    box-shadow: 20px 20px 0 20px #d3a051 !important;
+}
+
+/* ============================================ */
+/*  (اختیاری) سایه‌ی کل کارت هنگام کلیک        */
+/* ============================================ */
+.question__card:active {
+    box-shadow: 5px 5px 15px var(--main__color, #d3a051);
 }

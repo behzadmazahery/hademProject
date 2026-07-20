@@ -94,3 +94,7 @@ Route::get('/mosabeghatKetabkhani', function(){
 	return view('mosabeghatKetabkhani');
 })->name('mosabeghatKetabkhani');
 
+
+Route::get('/mosabeghatKetabkhani1', function(){
+	return view('mosabeghatKetabkhani1');
+})->name('mosabeghatKetabkhani1');

@@ -38,7 +38,7 @@
 
          <section class=" w-[80%] mx-auto">
             <div class=" text-[#E5B569] flex items-center gap-3 font-bold">
-               <p class="text-[25px] border-[white] border-2 self-start py-4 px-2 rounded-2xl ">۲۵</p>
+               <p class="text-[25px] border-[white] question__counter self-start py-4 px-2 rounded-2xl ">۲۵</p>
                <p class="text-[12px] text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است؟</p>
             </div>
 
