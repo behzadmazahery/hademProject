@@ -101,11 +101,23 @@
     }
 }
 
+div,
+section,
+article,
+main,
+header,
+footer,
+nav {
+    scrollbar-width: none;
+    scrollbar: hidden;
+}
+
 .main__box {
     max-width: 500px;
     height: 100vh;
     margin: 0 auto;
     text-align: center;
+    overflow: scroll;
     background-color: var(--color__bg);
 }
 
@@ -1346,8 +1358,44 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* ============================================ */
-/*  (اختیاری) سایه‌ی کل کارت هنگام کلیک        */
+/*   سایه‌ی کل کارت هنگام کلیک        */
 /* ============================================ */
 .question__card:active {
     box-shadow: 5px 5px 15px var(--main__color, #d3a051);
+}
+
+/* ___________________________  send word styles */
+
+.sendWork__btn {
+    margin: 0px;
+}
+
+.sendWork__layer__btn {
+    border-bottom-right-radius: 30px; /* برعکس گوشه‌ی پایین-راست قبلی */
+}
+
+.sendWork__layer__btn::before {
+    content: "";
+    position: absolute;
+    bottom: -30px; /* به جای top */
+    left: 0; /* به جای right */
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top-left-radius: 9999px; /* به جای bottom-right */
+    box-shadow: -20px -20px 0 20px #2e2e2e; /* آفست‌های منفی */
+    z-index: -10;
+}
+
+.sendWork__layer__btn::after {
+    content: "";
+    position: absolute;
+    top: 0px; /* به جای top */
+    right: -30px; /* به جای right */
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top-left-radius: 9999px; /* به جای bottom-right */
+    box-shadow: -20px -20px 0 20px #2e2e2e; /* آفست‌های منفی */
+    z-index: -10;
 }

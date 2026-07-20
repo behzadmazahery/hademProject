@@ -209,3 +209,14 @@ function toggleMenu() {
 //         $(this).next(".select2-container").css("width", "120px");
 //     });
 // });
+
+// ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+// accurdion js
+
+document.addEventListener("DOMContentLoaded", function () {
+    // اگر از Flowbite v2 استفاده می‌کنید
+    const accordion = new Flowbite.Accordion(
+        document.getElementById("accordion-collapse"),
+    );
+});

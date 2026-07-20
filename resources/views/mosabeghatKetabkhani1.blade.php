@@ -78,6 +78,9 @@
 
          </ul>
 
+
+         <button class="main__btn" > سوال بعدی </button>
+
       </main>
 
 @endsection
