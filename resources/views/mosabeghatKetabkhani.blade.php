@@ -44,29 +44,36 @@
 
             <ul class="font-bold text-justify">
 
-               <div class="flex items-center gap-5 text-white border-2 p-2 my-5 border-[#E5B569] text-[11px] font-bold rounded-3xl  ">
+             <button class=" answer__btn block w-full">
+                 <div class="flex items-center gap-5 text-white border-2 p-2 mt-5  border-[#E5B569] text-[11px] font-bold rounded-3xl  ">
                   <span class="text-[#E5B569] text-[23px] mr-3"> ۱ </span>
                   <li class="text-justify pl-6"> دفاع مقدس با بهره گیری از مضامین عاشورایی  </li>
                </div>
+             </button>
 
 
-               <div onclick="this.classList.add('text-black', 'select__item')" 
+            <button class="block w-full">
+                  <div onclick="this.classList.add('text-black', 'select__item')" 
                   class="flex items-center gap-5 text-right text-white border-2 py-4 my-5 border-[#E5B569] text-[11px] font-bold rounded-3xl cursor-pointer">
                   
                   <span class="text-[#E5B569] text-[23px] mr-3 ">۲</span>
                   <li class="text-justify pl-6">  دفاع مقدس با بهره گیری از مضامین عاشورایی شعر دفاع مقدس، ولایت محوری و جهاد تبییــن پرچم، ایمــــان </li>
                </div>
+            </button>
 
-
-               <div class="flex items-center gap-5 text-white border-2 p-2 my-5 border-[#E5B569] text-[11px] font-bold rounded-3xl  ">
+            <button class="block w-full">
+                 <div class="flex items-center gap-5 text-white border-2 p-2  border-[#E5B569] text-[11px] font-bold rounded-3xl  ">
                   <span class="text-[#E5B569] text-[23px] mr-3"> ۳ </span>
                   <li class="text-justify pl-6"> دفاع مقدس با بهره گیری از مضامین عاشورایی شعر دفاع مقدس، ولایت محوری و جهاد تبییــن پرچم، ایمــــان </li>
                </div>
+            </button>
 
-               <div class="flex items-center gap-5 text-white border-2 p-2 my-5 border-[#E5B569] text-[11px] font-bold rounded-3xl  ">
+            <button class="block w-full">
+                <div class="flex items-center gap-5 text-white border-2 p-2 my-5 border-[#E5B569] text-[11px] font-bold rounded-3xl  ">
                   <span class="text-[#E5B569] text-[23px] mr-3"> ۴ </span>
                   <li class="text-justify pl-6">دفاع مقدس با بهره گیری از مضامین عاشورایی شعر دفاع مقدس، ولایت محوری و جهاد تبییــن پرچم، ایمــــان </li>
                </div>
+             </button> 
 
             </ul>
          </section>

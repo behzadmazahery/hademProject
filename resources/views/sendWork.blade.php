@@ -30,7 +30,7 @@
 
 
             <section>
-               <h1 class="text-[#d3a051] font-bold text-right my-10 w-[60%] text-[20px] " > هفدهمین جشنواره شعر تپش های ماندگار </h1>
+               <h1 class="text-[#d3a051] font-bold text-right my-6 w-[60%] text-[20px] " > هفدهمین جشنواره شعر تپش های ماندگار </h1>
                            
                   <div id="accordion1" data-accordion="collapse" class=" mb-4 rounded-base overflow-hidden shadow-xs bg-[#212121] px-3 rounded-xl">
                         <h2 id="accordion1-heading-1">
