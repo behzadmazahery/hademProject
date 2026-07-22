@@ -21,6 +21,7 @@
    <main class="mosabeghat__content  w-[85%] mx-auto overflow-scroll">
       
       <section class="mosabeghat__item bg-[#212121] p-2 rounded-3xl  mb-5"> 
+
          <div class="relative">
             <img class=" w-full  h-[160px]" src=" {{asset('assets/images/img__mosabeghat__baner.png')}} " alt="mosabeghat image">
             <!-- وقتی مسابقه تمام میشود display : block  میشود . -->
@@ -36,7 +37,9 @@
          <article class="flex gap-2 justify-between w-[80%] mx-auto text-[12px] font-bold text-nowrap ">
             <div class="font-btn-outline-danger w-[50%] ">
                <p class="border-[#d3a051] border p-2 rounded-3xl mb-2"> <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 ">شروع مسابقه</span> <span class="text-white">   ۱۴۰۴/۰۶/۱۱ </span>  </p>
-               <p class="border-[#d3a051] border p-2 rounded-3xl"> <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 ">پایان مسابقه</span> <span class="text-white"> ۱۴۰۴/۰۶/۱۱ </span>  </p>
+                  <button class="border-[#d3a051] border p-2 rounded-3xl show__result__btn text-[15px]"> <span class="text-[#000]  pl-1 ">
+                  مشاهده نتایج
+               </span> </button>
             </div>
 
             <div class="border-[#d3a051] border p-2 rounded-3xl w-[50%]">
@@ -58,7 +61,9 @@
 
 
       </section>
-       <section class="mosabeghat__item bg-[#212121] p-2 rounded-3xl  mb-5"> 
+
+
+      <section class="mosabeghat__item bg-[#212121] p-2 rounded-3xl  mb-5"> 
          <div class="relative">
             <img class=" w-full h-[160px] " src=" {{asset('assets/images/img__mosabeghat__baner.png')}} " alt="mosabeghat image">
             
@@ -72,27 +77,34 @@
 
 
          </div>
-         <p class="text-[#d3a051] text-[12px] font-bold p-2 border-b inline-block mb-2 border-[#9E9691]"> جایز ادبی یوسف داستان کوتاه دفاع مقدس و مقاومت </p>
+         
+            <p class="text-[#d3a051] text-[12px] font-bold p-2 border-b inline-block mb-2 border-[#9E9691]"> جایز ادبی یوسف داستان کوتاه دفاع مقدس و مقاومت 
+
+            </p>
          
          <article class="flex gap-2 justify-between w-[80%] mx-auto text-[12px] font-bold text-nowrap ">
+
             <div class="font-btn-outline-danger w-[50%] ">
                <p class="border-[#d3a051] border p-2 rounded-3xl mb-2"> <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 ">شروع مسابقه</span> <span class="text-white">   ۱۴۰۴/۰۶/۱۱ </span>  </p>
-               <p class="border-[#d3a051] border p-2 rounded-3xl"> <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 ">پایان مسابقه</span> <span class="text-white"> ۱۴۰۴/۰۶/۱۱ </span>  </p>
+            
+
+                              <p class="border-[#d3a051] border p-2 rounded-3xl"> <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 ">پایان مسابقه</span> <span class="text-white"> ۱۴۰۴/۰۶/۱۱ </span>  </p>
+
             </div>
 
             <div class="border-[#d3a051] border p-2 rounded-3xl w-[50%]">
-                  <p class="flex items-center mb-1">
-                     <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 text-nowrap w-16">اول</span>
-                     <span class="text-white pr-2">۳۰.۰۰۰.۰۰۰ ریال</span>
-                  </p>
-                  <p class="flex items-center mb-1">
-                     <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 text-nowrap w-16">دوم</span>
-                     <span class="text-white pr-2">۳۰.۰۰۰.۰۰۰ ریال</span>
-                  </p>
-                  <p class="flex items-center mb-1">
-                     <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 text-nowrap w-16">سوم</span>
-                     <span class="text-white pr-2">۳۰.۰۰۰.۰۰۰ ریال</span>
-                  </p>
+               <p class="flex items-center mb-1">
+                  <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 text-nowrap w-16">اول</span>
+                  <span class="text-white pr-2">۳۰.۰۰۰.۰۰۰ ریال</span>
+               </p>
+               <p class="flex items-center mb-1">
+                  <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 text-nowrap w-16">دوم</span>
+                  <span class="text-white pr-2">۳۰.۰۰۰.۰۰۰ ریال</span>
+               </p>
+               <p class="flex items-center mb-1">
+                  <span class="text-[#d3a051] border-l-2 border-[#777777] pl-1 text-nowrap w-16">سوم</span>
+                  <span class="text-white pr-2">۳۰.۰۰۰.۰۰۰ ریال</span>
+               </p>
                </div>
 
          </article>

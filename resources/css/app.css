@@ -1399,3 +1399,13 @@ input[type="range"]::-moz-range-thumb {
     box-shadow: -20px -20px 0 20px #2e2e2e; /* آفست‌های منفی */
     z-index: -10;
 }
+
+.show__result__btn {
+    width: 100%;
+    box-shadow: 0 0 5px #d3a051;
+    background-image: linear-gradient(
+        to  right,
+        #f9f7e9,
+        var(--main__color)
+    );
+}

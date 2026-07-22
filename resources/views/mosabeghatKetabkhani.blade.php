@@ -1,10 +1,11 @@
 @extends('v1.layout.master')
 
-
 @section('content')
-        <!-- header box -->
 
-            <section class="flex items-center justify-between mx-11 mb-8 pt-10">
+<!-- header box -->
+
+
+<section class="flex items-center justify-between mx-11 mb-8 pt-10">
                 <!-- right box _ menu icon -->
                 <article>
                     <img class="w-[30px]"  src=" {{asset('assets/images/menuIcon.png')}} " alt="menu icon">
@@ -26,9 +27,9 @@
 
          <!-- time section  -->
          <section class=" text-white question__timer inline-block px-10 border-[#E5B569] text-[21px] font-bold rounded-xl my-10 ">
-            <span>۱۲</span> : 
-            <span>۳۰</span> :
-            <span>۰۰</span>
+            <span id="h">۱۲</span> : 
+            <span id="m" >۳۰</span> :
+            <span id="s" >۰۰</span>
          </section>
 
          <!-- end time section -->
@@ -88,8 +89,7 @@
          </section>
 
 
-
-
+         <script src="../js/app.js" > </script>
 
 
 

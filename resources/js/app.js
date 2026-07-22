@@ -220,3 +220,38 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("accordion-collapse"),
     );
 });
+
+// _____________________________________
+
+// timer js
+const h = document.getElementById("h");
+const m = document.getElementById("m");
+const s = document.getElementById("s");
+
+const timer = setInterval(() => {
+    let hours = parseInt(h.textContent);
+    let minutes = parseInt(m.textContent);
+    let seconds = parseInt(s.textContent);
+
+    if (hours === 0 && minutes === 0 && seconds === 0) {
+        clearInterval(timer);
+        return;
+    }
+
+    if (seconds === 0) {
+        seconds = 59;
+
+        if (minutes === 0) {
+            minutes = 59;
+            hours--;
+        } else {
+            minutes--;
+        }
+    } else {
+        seconds--;
+    }
+
+    h.textContent = String(hours).padStart(2, "0");
+    m.textContent = String(minutes).padStart(2, "0");
+    s.textContent = String(seconds).padStart(2, "0");
+}, 1000);
